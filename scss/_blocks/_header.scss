@@ -62,4 +62,29 @@
         color: #FFFFFF;
         background: #5671F6;
     }
+    &__mobile {
+        &-buttons {
+            display: none;
+        }
+        &-search {
+            padding: 5px;
+            background-color: #F3F3F3;
+            border: none;
+            cursor: pointer;
+        }
+        &-menu {
+            padding: 5px;
+            background-color: #F3F3F3;
+            border: none;
+            cursor: pointer;
+            &-line {
+                display: block;
+                width: 16px;
+                height: 2px;
+                background-color: #000;
+                margin: 3px 0;
+                border-radius: 40px;
+            }
+        }
+    }
 }
