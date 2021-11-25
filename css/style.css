@@ -315,7 +315,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   margin: 0;
-  background: #E5E5E5; }
+  background: #F3F3F3; }
 
 .container {
   max-width: 1130px;
@@ -387,7 +387,7 @@ body {
   .header__register {
     padding: 0 34px;
     color: #5671F6;
-    background-color: #E5E5E5;
+    background-color: #F3F3F3;
     border-left: 1px solid #D4D4D4; }
   .header__login {
     padding: 0 50px;
@@ -431,7 +431,7 @@ body {
     border: none;
     border: 1px solid #D4D4D4;
     border-radius: 0px 0px 5px 5px;
-    background-color: #E5E5E5;
+    background-color: #F3F3F3;
     padding: 25px;
     cursor: pointer; }
     .film__play-icon--margin {
@@ -544,5 +544,76 @@ body {
         font-weight: bold; }
       .film__rating-text:not(:last-child) {
         margin-bottom: 7px; }
+
+.cast {
+  padding: 70px 0 100px;
+  background: #F3F3F3; }
+  .cast__tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .cast__tabs--margin {
+      margin-bottom: 60px; }
+  .cast__title {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #A5A5A5;
+    margin: 0; }
+    .cast__title--active {
+      font-weight: 900;
+      color: #363636; }
+    .cast__title--margin {
+      margin-right: 30px; }
+  .cast__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .cast__card {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .cast__card--margin {
+      margin-top: 35px; }
+    .cast__card-image {
+      width: 100px;
+      height: 100px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      border-radius: 50%; }
+      .cast__card-image--margin {
+        margin-right: 20px; }
+  .cast__name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #5671F6;
+    margin: 0; }
+    .cast__name--margin {
+      margin-bottom: 6px; }
+  .cast__en-name {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A5A5A5; }
 
 /*# sourceMappingURL=style.css.map */
