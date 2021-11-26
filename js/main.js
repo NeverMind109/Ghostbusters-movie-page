@@ -65,4 +65,15 @@ jQuery(document).ready(function($){
         },
       }
     });
+
+  // Переключатель актеров и создателей
+    const tab = $('.tab');
+    tab.on('click', function () {
+      tab.removeClass('cast__title--active');
+      $(this).toggleClass('cast__title--active');
+      let activeTabContent = $(this).attr('data-target');
+      $('.cast__content--active').removeClass('cast__content--active');
+      $(activeTabContent).toggleClass('cast__content--active')
+
+    })
 })

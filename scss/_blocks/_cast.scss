@@ -24,9 +24,16 @@
         }
     }
     &__content {
-        display: flex;
+        display: none;
         align-items: center;
         flex-wrap: wrap;
+        visibility: hidden;
+        &--active {
+            display: flex;
+            visibility: visible;
+            font-weight: 900;
+            color: #363636;
+        }
     }
     &__card {
         flex-basis: 25%;
@@ -44,7 +51,6 @@
                 margin-right: 20px;
             }
         }
-
     }
     &__name {
         font-weight: bold;
@@ -62,5 +68,18 @@
         font-size: 16px;
         line-height: 19px;
         color: #A5A5A5;
+    }
+    &__position {
+        display: block;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #5671F6;
+        &--margin {
+            margin-top: 6px;
+        }
+    }
+    .tab {
+        cursor: pointer;
     }
 }

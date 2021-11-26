@@ -604,14 +604,20 @@ body {
     .cast__title--margin {
       margin-right: 30px; }
   .cast__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    visibility: hidden; }
+    .cast__content--active {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      visibility: visible;
+      font-weight: 900;
+      color: #363636; }
   .cast__card {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
@@ -647,6 +653,16 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #A5A5A5; }
+  .cast__position {
+    display: block;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5671F6; }
+    .cast__position--margin {
+      margin-top: 6px; }
+  .cast .tab {
+    cursor: pointer; }
 
 .news {
   background: #E5E5E5;
