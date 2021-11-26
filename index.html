@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Охотники за привидениями: Наследники</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/plyr.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,16 +16,18 @@
         <a href="index.html" class="header__home-page">
             <img src="img/logo.png" alt="Image: Logo" width="68px" class="header__logo">
         </a>
-        <input type="search" class="header__search-input header__search-input--margin" placeholder="Поиск по фильмам...">
-        <nav class="header__navigation header__navigation--margin">
-            <a href="" class="header__navigation-link" hreh="#">Фильмы</a>
-            <a href="" class="header__navigation-link" hreh="#">ТВ</a>
-            <a href="" class="header__navigation-link" hreh="#">Новости</a>
-            <a href="" class="header__navigation-link" hreh="#">О сервисе</a>
-        </nav>
-        <div class="header__button-group">
-            <button class="button header__register">Регистрация</button>
-            <button class="button header__login">Войти</button>
+        <div class="header__navigation-block">
+            <input type="search" class="header__search-input header__search-input--margin" placeholder="Поиск по фильмам...">
+            <nav class="header__navigation header__navigation--margin">
+                <a class="header__navigation-link" hreh="#">Фильмы</a>
+                <a class="header__navigation-link" hreh="#">ТВ</a>
+                <a class="header__navigation-link" hreh="#">Новости</a>
+                <a class="header__navigation-link" hreh="#">О сервисе</a>
+            </nav>
+            <div class="header__button-group">
+                <button class="button header__register header__register--margin">Регистрация</button>
+                <button class="button header__login">Войти</button>
+            </div>
         </div>
         <div class="header__mobile-buttons">
             <button class="header__mobile-search">
@@ -40,10 +45,10 @@
             <div class="film__wrapper">
                 <div class="film__trailer film__trailer--margin">
                     <img src="img/movie-poster.jpg" alt="Image: Film Poster" class="film__poster">
-                    <button class="film__play">
+                    <a class="film__play" data-fancybox-plyr href="https://www.youtube.com/watch?v=7yRzdfRisgU&ab_channel=SonyPicturesRU">
                         <img src="img/play.svg" alt="Icon: Play" class="film__play-icon film__play-icon--margin">
                         <span class="film__play-text">Посмотреть трейлер</span>
-                    </button>
+                    </a>
                 </div>
                 <div class="film__text">
                     <h1 class="film__title film__title--margin">Охотники за привидениями: <br>Наследники</h1>
@@ -184,5 +189,9 @@
             </div>
         </div>
     </section>
+    <script src='js/jquery-3.6.0.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/plyr.js"></script>
+    <script src='js/main.js'></script>
 </body>
 </html>
