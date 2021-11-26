@@ -391,6 +391,8 @@ body {
     cursor: pointer; }
     .header__navigation-link:not(:last-child) {
       margin-right: 18px; }
+    .header__navigation-link:hover {
+      color: #8f8f8f; }
   .header__navigation--margin {
     margin-left: auto;
     margin-right: 44px; }
@@ -401,10 +403,14 @@ body {
     color: #5671F6;
     background-color: #F3F3F3;
     border-left: 1px solid #D4D4D4; }
+    .header__register:hover {
+      background-color: #dfdbdb; }
   .header__login {
     padding: 0 50px;
     color: #FFFFFF;
     background: #5671F6; }
+    .header__login:hover {
+      background-color: #5069e2; }
   .header__mobile-buttons {
     display: none; }
   .header__mobile-search {
@@ -473,6 +479,8 @@ body {
       font-size: 16px;
       line-height: 19px;
       color: #5671F6; }
+    .film__play:hover {
+      background-color: #dfdbdb; }
   .film__title {
     font-weight: 900;
     font-size: 36px;
@@ -882,10 +890,6 @@ body {
   .container {
     width: 95%; }
 
-  .header__button-group {
-    display: none; }
-  .header__search-input {
-    display: none; }
   .header__home-page::after {
     display: none; }
 

@@ -221,12 +221,6 @@
         width: 95%;
     }
     .header {
-        &__button-group {
-            display: none;
-        }
-        &__search-input {
-            display: none;
-        }
         &__home-page {
             &::after {
                 display: none;

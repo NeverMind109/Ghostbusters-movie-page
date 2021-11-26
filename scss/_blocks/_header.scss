@@ -46,6 +46,9 @@
             &:not(:last-child) {
                 margin-right: 18px;
             }
+            &:hover {
+                color: rgb(143, 143, 143);
+            }
         }
         &--margin {
             margin-left: auto;
@@ -62,11 +65,17 @@
         color: #5671F6;
         background-color: #F3F3F3;
         border-left: 1px solid #D4D4D4;
+        &:hover {
+            background-color: #dfdbdb;
+        }
     }
     &__login {
         padding: 0 50px;
         color: #FFFFFF;
         background: #5671F6;
+        &:hover {
+            background-color: #5069e2;
+        }
     }
     &__mobile {
         &-buttons {
