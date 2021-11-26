@@ -12,13 +12,7 @@
             margin-bottom: 65px;
         }
     }
-    &__cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
     &__card {
-        flex-basis: 23%;
         background: #FFFFFF;
         border-radius: 5px;
         padding: 30px;
@@ -40,5 +34,15 @@
             color: #000000;
             margin: 0;
         }
+    }
+    &__button-next {
+        display: none;
+        position: absolute;
+        z-index: 101;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        background-color: transparent;
+        border: none;
     }
 }

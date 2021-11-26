@@ -37,11 +37,32 @@ jQuery(document).ready(function($){
         },
       });
 
-// 
+// Mobile menu
     const mMenuBtn = $(".header__mobile-menu");
     const mMenu = $(".header__navigation-block");
     mMenuBtn.on('click', function() {
         mMenu.toggleClass('header__navigation-block--active');
         $("body").toggleClass('no-scroll');
-    })
+    });
+
+// Swiper
+    const swiper = new Swiper(".news__swiper", {
+      slidesPerView: 4,
+      spaceBetween: 25,
+      loop: true,
+      breakpoints: {
+        992: {
+          slidesPerView: 4,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        320: {
+          slidesPerView: 1,
+          navigation: {
+            nextEl: '.news__button-next',
+          }
+        },
+      }
+    });
 })

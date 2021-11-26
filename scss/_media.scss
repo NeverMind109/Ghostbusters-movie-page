@@ -92,14 +92,6 @@
             }
         }
     }
-    .news {
-        &__card {
-            flex-basis: 48%;
-            &--margin {
-                margin-bottom: 20px;
-            }
-        }
-    }
 }
 @media (max-width: 768px) {
     .container {
@@ -215,6 +207,12 @@
             &--margin {
                 margin-bottom: 30px;
             }
+        }
+        &__card {
+            max-width: 90%;
+        }
+        &__button-next {
+            display: block;
         }
     }
 }

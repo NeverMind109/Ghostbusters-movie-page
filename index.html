@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Охотники за привидениями: Наследники</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
-    <link rel="stylesheet" href="css/tailwind.min.css">
-    <link rel="stylesheet" href="css/plyr.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" /> <!--Facybox-->
+    <link rel="stylesheet" href="css/tailwind.min.css"> <!--Facybox-->
+    <link rel="stylesheet" href="css/plyr.css"> <!--Facybox-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> <!--Swiper-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -169,29 +170,46 @@
     <section class="news">
         <div class="container">
             <h2 class="news__title news__title--margin">Новости по теме</h2>
-            <div class="news__cards">
-                <div class="news__card news__card--margin">
-                    <span class="news__card-date news__card-date--margin">31 марта 2020</span>
-                    <h3 class="news__card-title">«Морбиуса» и «Охотников за привидениями» перенесли на следующий год</h3>
+            <!-- Slider main container -->
+            <div class="swiper news__swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper news__wrapper">
+                <!-- Slides -->
+                    <div class="swiper-slide news__slide">
+                        <div class="news__card">
+                            <span class="news__card-date news__card-date--margin">31 марта 2020</span>
+                            <h3 class="news__card-title">«Морбиуса» и «Охотников за привидениями» перенесли на следующий год</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide news__slide">
+                        <div class="news__card">
+                            <span class="news__card-date news__card-date--margin">9 декабря 2019</span>
+                            <h3 class="news__card-title">Наследники: Вышел дебютный трейлер новых «Охотников за привидениями»</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide news__slide">
+                        <div class="news__card">
+                            <span class="news__card-date news__card-date--margin">11 ноября 2019</span>
+                            <h3 class="news__card-title">Новые «Охотники за привидениями» обзавелись названием</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide news__slide">
+                        <div class="news__card">
+                            <span class="news__card-date news__card-date--margin">19 октября 2019</span>
+                            <h3 class="news__card-title">Завершились съёмки новых «Охотников за привидениями»</h3>
+                        </div>
+                    </div>
                 </div>
-                <div class="news__card news__card--margin">
-                    <span class="news__card-date news__card-date--margin">9 декабря 2019</span>
-                    <h3 class="news__card-title">Наследники: Вышел дебютный трейлер новых «Охотников за привидениями»</h3>
-                </div>
-                <div class="news__card news__card--margin">
-                    <span class="news__card-date news__card-date--margin">11 ноября 2019</span>
-                    <h3 class="news__card-title">Новые «Охотники за привидениями» обзавелись названием</h3>
-                </div>
-                <div class="news__card news__card--margin">
-                    <span class="news__card-date news__card-date--margin">19 октября 2019</span>
-                    <h3 class="news__card-title">Завершились съёмки новых «Охотников за привидениями»</h3>
-                </div>
+                <button class="news__button-next">
+                    <img src="img/arrow.svg" alt="Icon: Next">
+                </button>
             </div>
         </div>
     </section>
     <script src='js/jquery-3.6.0.min.js'></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-    <script src="js/plyr.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script> <!--Facybox-->
+    <script src="js/plyr.js"></script> <!--Facybox-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> <!--Swiper-->
     <script src='js/main.js'></script>
 </body>
 </html>
